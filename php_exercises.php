@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,20 +13,18 @@
             public $color;
             public $model;
             public function __construct($color, $model){
-                $this->color = $color;
-                $this->model = $model;
+                $this->color=$color;
+                $this->model=$model;
             }
             public function message(){
-                return "My Car is a ".$this->color." ".$this->model." !!!";
+                return "My car is a ". $this->color." ".$this->model." !!";
             }
         }
-
-        $myCar = new Car("Black", "Landcruiser");
+        $myCar = new Car("Red", "Toyota");
         echo $myCar->message();
         echo "<br>";
-        $myCar = new Car("Yellow", "Txl");
+        $myCar = new Car("Black", "Txl");
         echo $myCar->message();
-
     ?>
 </body>
 </html>
