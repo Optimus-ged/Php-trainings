@@ -9,22 +9,25 @@
 </head>
 <body>
     <?php
-        class Car{
-            public $color;
-            public $model;
-            public function __construct($color, $model){
-                $this->color=$color;
-                $this->model=$model;
+        class Student{
+            public $name;
+            public $age;
+
+            public function __construct($name, $age){
+                $this->name = $name;
+                $this->age = $age;
             }
+
             public function message(){
-                return "My car is a ". $this->color." ".$this->model." !!";
+                return "L'eleve ".$this->name." a ".$this->age." ans";
             }
         }
-        $myCar = new Car("Red", "Toyota");
-        echo $myCar->message();
+
+        $stu = new Student("Optimus ged", 22);
+        echo $stu->message();
         echo "<br>";
-        $myCar = new Car("Black", "Txl");
-        echo $myCar->message();
+        $stu = new Student("John Kuhanda", 61);
+        echo $stu->message();
     ?>
 </body>
 </html>
